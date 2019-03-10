@@ -25,7 +25,7 @@ const httpServerConfig = {
     extensions: [".js", ".jsx", ".ts", ".tsx"]
   },
   output: {
-    filename: "http-server.js",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist")
   },
   plugins: [
