@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "es6", 
+    "moduleResolution": "node", 
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "dist",
+    "target": "es6",
+    "emitDecoratorMetadata": true, // required by typeorm
+    "experimentalDecorators": true // required by typeorm
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
+}
