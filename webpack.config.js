@@ -9,7 +9,6 @@ const {
 const httpServerConfig = {
   entry: "./src/index",
   mode: NODE_ENV,
-  watch: NODE_ENV === 'development',
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -32,9 +31,6 @@ const httpServerConfig = {
     // this plugin is to spawn a separate process to run the server
     // currently it's using some legacy code which is not compatible with webpack 4. 
     // need to update this plugin later
-    new WebpackShellPlugin({
-      onBuildEnd: ['npm run run:httpserver']
-    })
   ],
   externals: [ nodeExternals() ]
 }
